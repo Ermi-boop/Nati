@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ETIO ILL</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2398108337410510" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #4CAF50;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #800080;
+      margin: 0;
+    }
+
+    .form-container {
+      width: 50%;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .form-container button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .form-container button:hover {
+      background-color: #45a049;
+      transform: scale(1.1);
+    }
+
+    .progress-bar-container {
+      width: 100%;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+      margin-top: 20px;
+      height: 30px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background-color: #4CAF50;
+      text-align: center;
+      line-height: 30px;
+      color: white;
+      transition: width 1s linear;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Register For ETIO ILL Official</h1>
+  </header>
+
+  <div class="form-container">
+    <h2>Welcome!</h2>
+    <p>You're invited to continue to the next phase.</p>
+    <button onclick="startCountdown()">Continue</button>
+
+    <!-- Progress Section -->
+    <div class="progress-bar-container" style="display:none;" id="progressContainer">
+      <div class="progress-bar" id="progressBar">0%</div>
+    </div>
+    <p id="countdownText" style="margin-top:10px; font-weight: bold;"></p>
+  </div>
+
+  <!-- AdSense Placeholder -->
+  <div class="adsense" style="text-align:center; margin: 20px 0;">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-2398108337410510"
+         data-ad-slot="YOUR_SLOT_ID"
+         data-ad-format="auto"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Website. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function startCountdown() {
+      const duration = 35; // seconds
+      let remaining = duration;
+      const progressBar = document.getElementById('progressBar');
+      const countdownText = document.getElementById('countdownText');
+      const progressContainer = document.getElementById('progressContainer');
+
+      progressContainer.style.display = 'block';
+
+      const interval = setInterval(() => {
+        remaining--;
+        let percentage = Math.floor(((duration - remaining) / duration) * 100);
+        progressBar.style.width = percentage + '%';
+        progressBar.textContent = percentage + '%';
+        countdownText.textContent = 'Redirecting in ' + remaining + ' seconds...';
+
+        if (remaining <= 0) {
+          clearInterval(interval);
+          countdownText.textContent = 'Redirecting...';
+          window.location.href = 'Phase3a.html';
+        }
+      }, 1000);
+    }
+  </script>
+
+</body>
+</html>
